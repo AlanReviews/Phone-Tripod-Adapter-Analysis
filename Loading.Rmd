@@ -7,6 +7,7 @@ output: html_notebook
 # load libraries
 library(readr)
 library(dplyr)
+library(ggplot2)
 ```
 
 ```{r message=FALSE}
@@ -18,4 +19,10 @@ products <- read_csv('products.csv')
 # inspect data frame
 head(products)
 summary(products)
+```
+
+```{r}
+# Creating a graph with ggplot2
+graph <- ggplot(data=products, aes(x=Product_name, y=Price)) + geom_point(aes(color=Price), alpha=1.0)
+graph
 ```
