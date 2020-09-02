@@ -23,6 +23,6 @@ summary(products)
 
 ```{r}
 # Creating a graph with ggplot2
-graph <- ggplot(data=products, aes(x=Product_name, y=Price)) + geom_point(aes(color=Price), alpha=1.0)
+graph <- ggplot(data=products, aes(x=Product_name, y=Price)) + geom_point(aes(color=Product_name), alpha = 0.5) + labs(title = "Product vs Price", subtitle = "From Amazon.ca")
 graph
 ```
