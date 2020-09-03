@@ -24,5 +24,5 @@ summary(products)
 ```{r}
 priceVector <- pull(products, Price)
 nameVector <- pull(products, Product_name)
-barplot(priceVector, names.arg = nameVector, xlab = "Name", ylab = "Price", main = "Products and Prices")
+barplot(priceVector, names.arg = nameVector, xlab = "Brand", ylab = "Price", main = "Products and Prices")
 ```
